@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spo_edit.css">
+    <link rel="stylesheet" href="spo_utility.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+    <title>Spotify_Clone</title>
+</head>
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="home border bg-grey m-space p-space">
+                <div class="logo">
+                  <img class="invert" src="imgs/logo.svg" alt="logo">
+                  <img class="close invert"  src="imgs/close.svg" alt="cross">
+                </div>
+                <ul class="font">
+                    <li><img class="invert pic" src="imgs/home.svg" alt="home">Home</li>
+                    <li><img class="invert pic" src="imgs/search.svg" alt="search">Search</li> 
+                </ul>
+            </div>
+            <div class="library border bg-grey m-space font">
+
+                <div class="lib flex align container">
+                  <img class="invert pic" src="imgs/lib.svg" alt="library">Your library
+                  <img class="add-btn invert pic"src="imgs/add.svg" alt="add">
+                </div>
+
+                <div class="lib_div bg-black m-space border ">
+                  <ul class="songslist">
+                    
+                  </ul>
+                </div>
+                
+                <div class="footer flex m-space">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                          <span>Legal</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="https://www.spotify.com/in-en/privacy/">
+                          <span>Privacy Center</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                          <span>Privacy Policy</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                          <span>Cookies</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                          <span>About Ads</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                          <span>Accessibility</span>
+                        </a>
+                      </div>
+                </div>
+
+                <span class="language flex align "><img class="invert pic" src="imgs/lang.svg" alt="language">English</span>
+            </div>
+
+        </div>
+
+        <div class="right bg-grey m-space border">
+
+          <div class="r-bar flex align">
+            <div class="left_right m-space">
+              <img class="ham pic invert" src="imgs/hamburger.svg" alt="ham">
+              <img class="pic invert" src="imgs/arrow_left.svg" alt="previous">
+              <img class="pic invert" src="imgs/arrow_right.svg " alt="next">
+            </div>
+            <div class="sign_log m-space">
+              <button class="signbtn">Sign up</button>
+              <button class="logbtn">Log in</button>
+            </div>
+          </div>
+
+          <div class="playlist flex align">
+            <h2 class="m-space">Spotify Playlists</h2>
+            <a class="s_all" href="">Show all</a>
+          </div>
+          
+          <div class="card_box flex border">
+
+            
+
+          </div>
+          
+          <div class="playbar border">
+            <div class="mBar flex align">
+
+              <div class="mInfo">
+                <div class="mTitle"></div>
+                <div class="mTime"></div>
+              </div>
+
+              <div class="mBut flex justify">
+                <img class=" pic invert" id="looP" src="imgs/loop.svg" alt="">
+                <img class=" pic invert" id="preV" src="imgs/previous.svg" alt="">
+                <img class=" pic invert" id="plaY" src="imgs/play.svg" alt="">
+                <img class=" pic invert" id="nexT" src="imgs/next.svg" alt="">
+                <img class=" pic invert" id="casT" src="imgs/cast.svg" alt="">
+              </div>
+
+              <div class="mVol flex align justify">
+                <img class="voL pic invert" src="imgs/volume.svg" alt="">
+                <input type="range" name="volume" class="vbar" value="0" />
+              </div>
+
+            </div>
+            
+
+            <div class="seek">
+              <div class="gol"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script src="spo_script.js"></script>
+</body>
+</html>
