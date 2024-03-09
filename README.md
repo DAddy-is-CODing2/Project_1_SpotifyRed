@@ -1,4 +1,4 @@
-# Project_1_Repoz
+# Project_1_Spotify_Red
 First git repo
 <br>
-Daddy- Big o' Ballz
+Daddy -> Big o' Ballz
