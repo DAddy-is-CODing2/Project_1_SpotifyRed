@@ -23,7 +23,7 @@ function convertSecsToMinSecs(secs) {
 
 async function getsongs(folder) {
     currFolder = folder
-    let a = await fetch(`http://127.0.0.1:5500/${folder}/`)
+    let a = await fetch(`/${folder}/`)
     let response = await a.text()
     
     //parsing the dom
@@ -75,7 +75,7 @@ async function getsongs(folder) {
 
 // to play the music
 const playMusic = (track , pause = false) => {
-    currSong.src =`http://127.0.0.1:5500/${currFolder}/` +  track
+    currSong.src =`/${currFolder}/` +  track
 
     if(!pause){                     // to play the song initially when pressed play/pause
         currSong.play()
@@ -105,7 +105,7 @@ async function displayAlbums() {
 
     for (let index = 0; index < array.length; index++) {
         const e = array[index]
-        if (e.href.includes("/songs/")) {
+        if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
             let folder = e.href.split("/").slice(-1)[0]
 
             // Get the metadata of the folder
